@@ -21,7 +21,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">my karz home</div>
+  <div id="map-title">my karz ws</div>
   <div id="map"></div>
 
   <!-- Create the map content with JavaScript (.js) -->
@@ -29,9 +29,9 @@
 
   /* Set up the map with initial center and zoom level */
   var map = L.map('map', {
-    center: [12.956145, 80.170723], // EDIT latitude, longitude to re-center map
-    zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
-    scrollWheelZoom: false
+    center: [13.012496, 80.236349], // EDIT latitude, longitude to re-center map
+    zoom: 18,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    scrollWheelZoom: true
   });
 
   /* Control panel to display map layers */
@@ -53,7 +53,7 @@
   // controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
 
   /* Display a blue point marker with pop-up text */
-  L.marker([12.956145, 80.170723]).addTo(map) // EDIT latitude, longitude to re-position marker
+  L.marker([13.012496, 80.236349]).addTo(map) // EDIT latitude, longitude to re-position marker
   .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
