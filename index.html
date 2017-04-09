@@ -57,7 +57,7 @@
   .bindPopup("karz exact loc"); // EDIT pop-up text message
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
-   var customLayer = L.geoJson(null, {
+   var customLayer = L.geoJson('karzmapdis.geojson',null, {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(feature.properties.Title);
     }
